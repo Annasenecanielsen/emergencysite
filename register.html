@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -31,18 +31,109 @@
       </nav>
     </header>
     <main>
-      <h1>INDBERET</h1>
+      <h1>ER DU BLEVET DELT?</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Kontakt os</h2>
+          <p>Har du fået delt private oplysninger, billeder mm., og mistænker at du er blevet udsat for cyperangreb?</p>
+          <p>Skriv dine oplevelser herunder:</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="form_div">
+            <h4>Fulde navn:</h4>
+            <label for="name"></label>
+            <input type="text" id="name" />
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+          <div class="form_div">
+            <h4>Alder:</h4>
+            <label for="alder"></label>
+            <input type="number" id="number" />
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+          <div class="form_div">
+            <h4>E-mail:</h4>
+            <label for="email"></label>
+            <input type="email" id="email" />
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+          <div class="form_div">
+            <h4>Land:</h4>
+            <label for="country"></label>
+            <input type="text" id="country" />
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+          <div class="form_div">
+            <fieldset>
+              <legend><h4>Telefontype:</h4></legend>
+              <div>
+                <label for="phone"></label>
+                <input type="radio" name="iPhone" value="phone" id="iPhone" />iPhone
+              </div>
+              <div>
+                <label for="phone"></label>
+                <input type="radio" name="Samsung" value="phone" id="samsung" />Samsung
+              </div>
+              <div>
+                <label for="phone"></label>
+                <input type="radio" name="Huawai" value="phone" id="huawai" />Huawai
+              </div>
+              <div>
+                <label for="phone"></label>
+                <input type="radio" name="Nokia" value="phone" id="nokia" />Nokia
+              </div>
+              <div>
+                <label for="phone"></label> Andet:
+                <input type="text" id="andet" />
+                <p class="error-message"><i>Please enter a value</i></p>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form_div">
+            <fieldset>
+              <legend><h4>Hvad har du fået delt?</h4></legend>
+              <div>
+                <label for="delt"></label>
+                <input type="checkbox" name="billeder" value="delt" id="billeder" />Billeder
+              </div>
+              <div>
+                <label for="delt"></label>
+                <input type="checkbox" name="videoer" value="delt" id="videoer" />Videoer
+              </div>
+              <div>
+                <label for="delt"></label>
+                <input type="checkbox" name="kontooplysninger" value="delt" id="kontooplysninger" />Kontooplysinger
+              </div>
+              <div>
+                <label for="delt"></label>
+                <input type="checkbox" name="cprnummer" value="delt" id="cprnummer" />cpr-nummer
+              </div>
+              <div>
+                <label for="delt"></label> Andet:
+                <input type="text" id="delt" />
+                <p class="error-message"><i>Please enter a value</i></p>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form_div">
+            <label for="kommentar"><h4>Andre kommentarer:</h4></label>
+            <input type="text" id="andet" />
+          </div>
+          <div class="form_div">
+            <label for="terms"></label>
+            <input type="checkbox" name="terms" value="terms" id="terms" />Accepter betingelser:
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+          <div class="form_div">
+            <button class="btn">Indsend svar</button>
+            <p class="error-message"><i>Please enter a value</i></p>
+          </div>
+        </form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsummering</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Bekræft dine oplysninger:</p>
         </article>
       </section>
     </main>

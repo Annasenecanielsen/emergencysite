@@ -48,7 +48,7 @@ h1 {
 }
 #instruction p {
   grid-column: 1/-1;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: var(--font-h2-size);
   line-height: 1.5rem;
 }
