@@ -18,6 +18,11 @@ main {
 #instruction main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
+
+.error-message {
+  display: none;
+}
+
 /* LAYOUT FOR HEADER AND FOOTER */
 footer {
   display: grid;
@@ -27,7 +32,7 @@ footer {
 header {
   grid-row: 1;
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+  grid-template-columns: 1fr minmax(300px, 1200px) 2fr;
 }
 header nav,
 footer nav {

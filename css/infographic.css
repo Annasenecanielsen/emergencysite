@@ -1,14 +1,20 @@
+html {
+  interpolate-size: allow-keywords;
+}
 #head-txt {
   fill: rgb(54, 54, 54);
 }
-.info-graphic,
 .info-text {
-  background-color: var(--color-info-bg);
   padding: 20px 0;
+  background-color: #eeeeee;
+  color: black;
 }
 .info-graphic {
-  border-radius: 0;
+  /* background-color: #eeeeee; */
+  border: 5px solid #eeeeee;
+  border-radius: 8px;
   margin: 60px auto 80px auto;
+  padding: 20px 0;
 }
 .info-text h2 {
   line-height: 3rem;
@@ -25,6 +31,9 @@
   margin: 0;
   padding: 0;
 }
+.ins-p {
+  color: rgb(255, 255, 255);
+}
 .info-text > *:not(:first-child) {
   margin: 0 clamp(1rem, 10%, 7rem);
 }
@@ -36,9 +45,34 @@
 }
 .info-box {
   padding: 1rem 1rem 0.5rem 1rem;
-  background-color: var(--color-card-bg);
+  background-color: var(--color-headline-bg);
+  color: white;
 }
 
 .info-box:nth-of-type(2n) {
-  background-color: var(--color-card-bg-inverted);
+  background-color: #15b7df;
 }
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: height 0.4s allow-discrete;
+}
+[open]::details-content {
+  height: auto;
+}
+
+/* .hidden {
+  display: none;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3 ease;
+}
+.content.open {
+  max-height: 200px;
+}
+.toggle {
+  cursor: pointer;
+  font-weight: bold;
+} */

@@ -1,63 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/forside.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <title>Emergency Site</title>
+  </head>
+  <body id="frontpage">
+    <header>
+      <nav>
+        <div id="logotype-wrapper" class="logo">
+          <a href="index.html">Forside</a>
+        </div>
+        <ul class="menu">
+          <li><a class="menuItem" href="instruction.html">Cyberangreb</a></li>
+          <li><a class="menuItem" href="register.html">Er du blevet delt?</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+    <main id="frontpage">
+      <section class="section-forside">
+        <div class="forside">
+          <img class="logo-forside" src="SVG/Aktiv 4.svg" alt="logo" />
+          <div>
+            <h1>Cyberudbrud på hele jordkloden</h1>
+            <p>Her er en guide til, hvordan du undgår deling af privat indhold</p>
+          </div>
+        </div>
+      </section>
+      <div id="wrapper">
+        <section id="newspaper">
+          <article>
+            <h1>DE SENESTE NYHEDER</h1>
+            <img src="img/delt_1.png" alt="" />
+            <div>
+              <h2>ALT privat indhold bliver delt</h2>
+              <p>Har du fået delt privat indhold? Skriv ind til os:</p>
+              <a href="register.html">Registrer dig her</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/cyber.png" alt="" />
+            <div>
+              <h2>CYBERUDBRUD - intet er sikkert</h2>
+              <p>Netværket eksploderer, og flere og flere bliver ramt af overtagelsen. Undgå cyberangreb?</p>
+              <a href="instruction.html">Læs mere her</a>
+            </div>
+          </article>
+          <article>
+            <img src="img/jord.png" alt="" />
+            <div>
+              <h2>Har ramt HELE jordkloden</h2>
+              <p>Er dit landområde i fare? Se hvilke områder der er ekstra ramt:</p>
+              <a href="instruction.html">Se områder her</a>
+            </div>
+          </article>
+        </section>
+        <section id="breaking">
+          <article>
+            <h1>BREAKING NEWS</h1>
+            <div class="articles">
+              <h2>Præsidentens beskeder afsløret</h2>
+              <p>De afslørede beskeder kan medføre, at præsidentens regeringstid er ovre</p>
+              <button popovertarget="popup1">Læs mere</button>
+              <div id="popup1" popover>
+                <h1>Den kommende krig</h1>
+                <p>Præsidenten af USA, Donald Trump, har også været udsat for cyberangreb. Både private beskeder fra hans arbejdstelefon og privattelefon, er blevet delt online og står nu overalt på verdens nyheder.</p>
+                <p>Beskeder, som hemmelige aftaler mellem USA og Ukraines kommende samarbejde mod Rusland, har sat Putins pis i kog, og erklærer nu direkte krig mod USA.</p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/burger.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="icon" type="image/png" href="img/fav.png">
-  <title>Emergency Site</title>
-</head>
-
-<body id="frontpage">
-  <header>
-    <nav>
-      <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+                <p>Flere nyheder om dette, opdateres løbende.</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="articles1">
+              <h2>Flere hackere spottet</h2>
+              <p>Det er lykkedes flere teknikkere, at spore cyberangrebenes bagmand</p>
+              <button popovertarget="popup2">Læs mere</button>
+              <div id="popup2" popover>
+                <h1>De første anholdelser</h1>
+                <p>Det er netop lykkedes bla. de indiske myndigheder at arrestere en mand, som efter sigende skulle være bagmanden bag flere ulovlige cyber-forbrydelser</p>
+                <p>Måden hvorpå han blev afsløret, ønsker teknikkerne ikke at afsløre grundet sikkerhed og fremtidig arbejde, men den de udtaler, at han langt fra bliver den sidste anholdte.</p>
+                <p>"<i>Når først koden er knækket, bliver det let at fange resten"</i>, lyder det bla. fra det indiske retssystems teknikkere.</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="articles">
+              <h2>Dronningen på forsiden:</h2>
+              <p>Man unslipper ikke cyberangrebet, selvom man er kongelig. Dronningen sætter flere ord på de delte nøgenbilleder:</p>
+              <button popovertarget="popup3">Se forsiden</button>
+              <div id="popup3" popover>
+                <img class="dronning" src="img/dronning.png" />
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
-      <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
-      </ul>
-      <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
-    </nav>
-  </header>
+      <article></article>
+    </main>
 
-  <main>
-
-  </main>
-
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-
+    <footer></footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

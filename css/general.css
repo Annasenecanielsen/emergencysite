@@ -89,6 +89,9 @@ nav a {
   align-items: center;
   height: 3.6rem;
 }
+#logotype-wrapper img {
+  height: 50px;
+}
 #logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
@@ -119,9 +122,13 @@ nav a:active {
 
 /* FOOTER */
 footer {
-  background-color: var(--color-head-bg);
+  background-color: var(--color-link-bg);
 }
 
 footer a {
   font-size: 0.7rem;
+}
+.forside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

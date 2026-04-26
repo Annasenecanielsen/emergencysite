@@ -1,0 +1,150 @@
+.section-forside {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgba(211, 21, 21, 0.876);
+  justify-items: center;
+  border-radius: 0;
+}
+.logo-forside {
+  width: 100px;
+}
+.forside {
+  align-items: center;
+}
+.forside h1 {
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.forside p {
+  font-size: 22px;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+#newspaper h1 {
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  /* background-color: rgb(27, 78, 129); */
+  background-color: rgb(153, 36, 36);
+  text-align: center;
+  padding-top: 0.5rem;
+}
+/* #wrapper h1 {
+  color: rgb(255, 255, 255);
+  margin-left: 1.3rem;
+  font-size: x-large;
+  background-color: rgb(27, 78, 129);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  max-width: 40.4rem;
+} */
+#newspaper {
+  display: grid;
+}
+
+#newspaper article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  color: black;
+  background-color: #eeeeee;
+  gap: 10px;
+}
+#newspaper a {
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  text-decoration: solid;
+  text-decoration: none;
+  background-color: #15b7df;
+  font-size: 14px;
+}
+#newspaper h2 {
+  font-size: 25px;
+}
+#newspaper img {
+  max-width: 300px;
+  border-radius: 0px;
+  padding: 1rem;
+}
+#newspaper div {
+  padding: 1rem;
+}
+#breaking {
+  max-width: 400px;
+  align-items: center;
+  justify-self: center;
+}
+#breaking article {
+  display: grid;
+  grid-template-columns: 3fr;
+  max-width: 400px;
+  background-color: #eeeeee;
+  text-align: center;
+  color: black;
+}
+.articles1 {
+  min-height: 160px;
+  place-content: center;
+  background-color: #c7c7c7b5;
+}
+.articles {
+  min-height: 160px;
+  place-content: center;
+}
+
+#breaking h1 {
+  color: #ffffff;
+  background-color: rgb(153, 36, 36);
+  font-size: x-large;
+  text-align: center;
+  padding-top: 0.7rem;
+}
+#breaking h2 {
+  font-size: 25px;
+}
+#breaking button {
+  margin-top: 6px;
+  padding: 5px;
+  border-style: none;
+  background-color: #15b7df;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  padding: 8px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+[popover] {
+  transition: 0.3s;
+  opacity: 1;
+  border-style: none;
+  margin: auto;
+  max-width: 65ch;
+  padding: 2rem;
+}
+[popover] p {
+  line-height: 1.2;
+  text-align: left;
+}
+:popover-open {
+  opacity: 1;
+}
+::backdrop {
+  backdrop-filter: blur(6px);
+}
+.dronning {
+  max-width: 400px;
+}
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
+}

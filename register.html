@@ -17,11 +17,11 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">Forside</a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a class="menuItem" href="instruction.html">Cyberangreb</a></li>
+          <li><a class="menuItem" href="register.html">Er du blevet delt?</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -38,54 +38,50 @@
           <p>Har du fået delt private oplysninger, billeder mm., og mistænker at du er blevet udsat for cyperangreb?</p>
           <p>Skriv dine oplevelser herunder:</p>
         </article>
-        <form id="webform">
+        <form aria-label="webform">
           <div class="form_div">
-            <h4>Fulde navn:</h4>
-            <label for="name"></label>
-            <input type="text" id="name" />
-            <p class="error-message"><i>Please enter a value</i></p>
+            <label for="navn"><h4>Fulde navn:</h4></label>
+            <input aria-describedby="navn-error" type="text" name="navn" />
+            <p class="error-message" id="navn-error"><i>Please enter a value</i></p>
           </div>
           <div class="form_div">
-            <h4>Alder:</h4>
-            <label for="alder"></label>
-            <input type="number" id="number" />
-            <p class="error-message"><i>Please enter a value</i></p>
+            <label for="alder"><h4>Alder:</h4></label>
+            <input aria-describedby="alder-error" type="number" name="alder" />
+            <p class="error-message" id="alder-error"><i>Please enter a value</i></p>
           </div>
           <div class="form_div">
-            <h4>E-mail:</h4>
-            <label for="email"></label>
-            <input type="email" id="email" />
-            <p class="error-message"><i>Please enter a value</i></p>
+            <label for="email"><h4>Email:</h4></label>
+            <input aria-describedby="email-error" type="email" name="email" />
+            <p class="error-message" id="email-error"><i>Please enter a value</i></p>
           </div>
           <div class="form_div">
-            <h4>Land:</h4>
-            <label for="country"></label>
-            <input type="text" id="country" />
-            <p class="error-message"><i>Please enter a value</i></p>
+            <label for="land"><h4>Land:</h4></label>
+            <input aria-describedby="land-error" type="text" name="land" />
+            <p class="error-message" id="land-error"><i>Please enter a value</i></p>
           </div>
           <div class="form_div">
             <fieldset>
               <legend><h4>Telefontype:</h4></legend>
               <div>
-                <label for="phone"></label>
-                <input type="radio" name="iPhone" value="phone" id="iPhone" />iPhone
+                <label for="telefon"></label>
+                <input aria-describedby="telefon-error" type="radio" name="telefon" value="Iphone" />iPhone
               </div>
               <div>
-                <label for="phone"></label>
-                <input type="radio" name="Samsung" value="phone" id="samsung" />Samsung
+                <label for="telefon"></label>
+                <input aria-describedby="telefon-error" type="radio" name="telefon" value="Samsung" />Samsung
               </div>
               <div>
-                <label for="phone"></label>
-                <input type="radio" name="Huawai" value="phone" id="huawai" />Huawai
+                <label for="telefon"></label>
+                <input aria-describedby="telefon-error" type="radio" name="telefon" value="Huawai" />Huawai
               </div>
               <div>
-                <label for="phone"></label>
-                <input type="radio" name="Nokia" value="phone" id="nokia" />Nokia
+                <label for="telefon"></label>
+                <input aria-describedby="telefon-error" type="radio" name="telefon" value="Nokia" />Nokia
               </div>
               <div>
-                <label for="phone"></label> Andet:
-                <input type="text" id="andet" />
-                <p class="error-message"><i>Please enter a value</i></p>
+                <label for="telefon"></label>
+                <input aria-describedby="telefon-error" type="radio" id="andet" />Ingen af de overstående
+                <p class="error-message" id="telefon-error"><i>Please enter a value</i></p>
               </div>
             </fieldset>
           </div>
@@ -94,39 +90,34 @@
               <legend><h4>Hvad har du fået delt?</h4></legend>
               <div>
                 <label for="delt"></label>
-                <input type="checkbox" name="billeder" value="delt" id="billeder" />Billeder
+                <input aria-describedby="delt-error" type="checkbox" name="delt" value="Billeder" />Billeder
               </div>
               <div>
                 <label for="delt"></label>
-                <input type="checkbox" name="videoer" value="delt" id="videoer" />Videoer
+                <input aria-describedby="delt-error" type="checkbox" name="delt" value="Videoer" />Videoer
               </div>
               <div>
                 <label for="delt"></label>
-                <input type="checkbox" name="kontooplysninger" value="delt" id="kontooplysninger" />Kontooplysinger
+                <input aria-describedby="delt-error" type="checkbox" name="delt" value="Kontooplysninger" />Kontooplysinger
               </div>
               <div>
                 <label for="delt"></label>
-                <input type="checkbox" name="cprnummer" value="delt" id="cprnummer" />cpr-nummer
+                <input aria-describedby="delt-error" type="checkbox" name="delt" value="Cpr-nummer" />cpr-nummer
               </div>
               <div>
-                <label for="delt"></label> Andet:
-                <input type="text" id="delt" />
-                <p class="error-message"><i>Please enter a value</i></p>
+                <label for="delt"></label>
+                <input aria-describedby="delt-error" type="checkbox" id="delt" />Ingen af de overstående
+                <p class="error-message" id="delt-error"><i>Please enter a value</i></p>
               </div>
             </fieldset>
           </div>
           <div class="form_div">
-            <label for="kommentar"><h4>Andre kommentarer:</h4></label>
-            <input type="text" id="andet" />
-          </div>
-          <div class="form_div">
             <label for="terms"></label>
-            <input type="checkbox" name="terms" value="terms" id="terms" />Accepter betingelser:
-            <p class="error-message"><i>Please enter a value</i></p>
+            <input aria-describedby="terms-error" type="checkbox" name="terms" value="terms" />Accepter betingelser:
+            <p class="error-message" id="terms-error"><i>Please enter a value</i></p>
           </div>
           <div class="form_div">
             <button class="btn">Indsend svar</button>
-            <p class="error-message"><i>Please enter a value</i></p>
           </div>
         </form>
       </section>
@@ -135,29 +126,18 @@
         <article>
           <p class="placeholder">Bekræft dine oplysninger:</p>
         </article>
+        <div>
+          <p>Fulde navn: <span id="navn_output"></span></p>
+          <p>Alder: <span id="alder_output"></span></p>
+          <p>Email: <span id="email_output"></span></p>
+          <p>Land: <span id="land_output"></span></p>
+          <p>Telefontype: <span id="telefon_output"></span></p>
+          <p>Hvad har du fået delt? <span id="delt_output"></span></p>
+          <p>Accepterede betingelser: <span id="terms_output"></span></p>
+        </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-          <li><a href="#">link</a></li>
-        </ul>
-      </nav>
-    </footer>
+    <footer></footer>
+    <script src="js/register.js"></script>
   </body>
 </html>

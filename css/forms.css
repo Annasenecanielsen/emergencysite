@@ -4,21 +4,29 @@
 
 #form-section,
 #form-summary {
-  background-color: var(--info-background-color);
+  background-color: rgb(153, 36, 36);
   padding: 1rem;
+  color: rgb(255, 255, 255);
 }
 #form-section h2 {
   font-size: x-large;
   padding-top: 1rem;
+  color: rgb(255, 255, 255);
 }
 .form_div {
   padding-bottom: 2rem;
+  color: rgb(255, 255, 255);
 }
 .btn {
-  padding: 0.7rem;
+  padding: 1rem;
   font-size: medium;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 7px;
 }
-
+#form-summary {
+  height: 400px;
+}
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;
@@ -38,7 +46,7 @@
   margin: 0 clamp(1rem, 10%, 7rem);
 }
 #form-summary p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
@@ -48,4 +56,21 @@
 }
 .error-message {
   display: none;
+}
+input {
+  max-width: 300px;
+  padding: 12px;
+  border: 1px solid #b1b1b1;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+fieldset {
+  padding-left: 0;
+  border-radius: 20px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  width: 18px;
+  cursor: pointer;
 }
